@@ -1,0 +1,8 @@
+.DS_Store
+*.log*
+dist/
+node_modules/
+test/_tmp
+test/hooks/tmp
+test/tmp
+test/typescript/typings

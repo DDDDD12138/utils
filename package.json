@@ -1,0 +1,42 @@
+{
+  "name": "utils",
+  "version": "0.0.1",
+  "description": "some utils",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "browser": "dist/index.umd.js",
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "pnpm clean && rollup -c & pnpm build:types",
+    "clean": "rimraf dist",
+    "build:types": "tsc -p tsconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DDDDD12138/utils.git"
+  },
+  "keywords": [
+    "utils"
+  ],
+  "author": "DDDDD12138",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DDDDD12138/utils/issues"
+  },
+  "homepage": "https://github.com/DDDDD12138/utils#readme",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-json": "^6.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "rimraf": "^5.0.5",
+    "rollup": "^4.4.1",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "typescript": "^5.2.2"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    /* Visit https://aka.ms/tsconfig to read more about this file */
+
+    "target": "es2016",
+    "lib": ["DOM", "ESNext"],
+
+    "declaration": true /* Generate .d.ts files from TypeScript and JavaScript files in your project. */,
+    "emitDeclarationOnly": true /* Only output d.ts files and not JavaScript files. */,
+    "outDir": "./dist" /* Specify an output folder for all emitted files. */
+  }
+}
