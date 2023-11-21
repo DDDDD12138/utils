@@ -30,6 +30,7 @@
   },
   "homepage": "https://github.com/DDDDD12138/utils#readme",
   "devDependencies": {
+    "@rollup/plugin-alias": "^5.0.1",
     "@rollup/plugin-commonjs": "^25.0.7",
     "@rollup/plugin-json": "^6.0.1",
     "@rollup/plugin-node-resolve": "^15.2.3",

@@ -1,3 +1,4 @@
+import alias from "@rollup/plugin-alias";
 import json from "@rollup/plugin-json";
 import { nodeResolve } from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
@@ -7,6 +8,10 @@ import { createRequire } from "node:module";
 
 const require = createRequire(import.meta.url);
 const pkg = require("./package.json");
+
+const aliasConfig = {
+  entries: [{ find: "@", replacement: "./src" }],
+};
 
 /**
  * @type {import('rollup').RollupOptions}
@@ -31,5 +36,12 @@ export default {
       format: "umd",
     },
   ],
-  plugins: [json(), nodeResolve(), commonjs(), rollupTypescript(), terser()],
+  plugins: [
+    alias(aliasConfig),
+    json(),
+    nodeResolve(),
+    commonjs(),
+    rollupTypescript(),
+    terser(),
+  ],
 };
