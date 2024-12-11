@@ -30,14 +30,14 @@
   },
   "homepage": "https://github.com/DDDDD12138/utils#readme",
   "devDependencies": {
-    "@rollup/plugin-alias": "^5.0.1",
-    "@rollup/plugin-commonjs": "^25.0.7",
-    "@rollup/plugin-json": "^6.0.1",
-    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-alias": "^5.1.1",
+    "@rollup/plugin-commonjs": "^25.0.8",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^15.3.0",
     "@rollup/plugin-terser": "^0.4.4",
-    "rimraf": "^5.0.5",
-    "rollup": "^4.4.1",
+    "rimraf": "^5.0.10",
+    "rollup": "^4.28.1",
     "rollup-plugin-typescript2": "^0.36.0",
-    "typescript": "^5.2.2"
+    "typescript": "^5.7.2"
   }
 }
