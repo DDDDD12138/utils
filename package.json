@@ -7,6 +7,16 @@
   "browser": "dist/index.umd.js",
   "type": "module",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "node": "./dist/index.cjs.js",
+      "import": "./dist/dist/index.esm.js",
+      "require": "./dist/index.cjs.js",
+      "browser": "./dist/index.esm.js",
+      "default": "./dist/index.cjs.js"
+    }
+  },
   "files": [
     "dist",
     "README.md"
